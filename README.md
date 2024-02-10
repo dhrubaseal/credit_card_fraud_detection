@@ -1,57 +1,52 @@
-Credit Card Fraud Detection
-==============================
+# Credit Card Fraud Detection
 
-Credit Card Fraud Detection
+Credit Card Fraud Detection is a machine learning project aimed at identifying fraudulent transactions using logistic regression.
 
-Project Organization
-------------
+## Table of Contents
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Introduction
 
---------
+Credit card fraud is a significant concern in today's digital world. This project showcases a machine learning approach using logistic regression to detect fraudulent credit card transactions. By leveraging historical transaction data, this model aims to identify potentially fraudulent activities and provide early warnings to prevent financial losses.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+## Features
+
+- Utilizes logistic regression algorithm for fraud detection.
+- Provides insights into the distribution of fraud and non-fraud transactions.
+- Generates ROC curves and calculates the ROC AUC score for model evaluation.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   $ git clone https://github.com/dhrubaseal/credit-card-fraud-detection.git
+   $ cd credit-card-fraud-detection
+   $ pip install -r requirements.txt
+
+## Usage
+
+ - Load and preprocess the credit card dataset.
+ - Train a logistic regression model for fraud detection.
+ - Evaluate the model using ROC curve and ROC AUC score.
+ - Explore the code for further analysis and improvement.
+
+## Results
+
+The logistic regression model achieved an ROC AUC score of 98. The ROC curve demonstrates the trade-off between true positive rate and false positive rate.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements.
+
+## License
+
+This is a personal project.
+

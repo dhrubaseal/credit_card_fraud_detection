@@ -1,9 +1,11 @@
-# data_preprocessing.py
+# Data Preprocessing
 
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+
+from .data_preprocessing import data
 
 def preprocess_data(data, numeric_features, categorical_features):
     """

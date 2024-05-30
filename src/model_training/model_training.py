@@ -1,4 +1,4 @@
-# model_training.py
+# Model Training
 
 def train_model(model, X_train, y_train):
     """

@@ -5,20 +5,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-from .data_preprocessing import data
-
 def preprocess_data(data, numeric_features, categorical_features):
-    """
-    Preprocess the data by handling missing values, scaling numerical features, and encoding categorical features.
-
-    Parameters:
-    - data (DataFrame): Input data.
-    - numeric_features (list): List of column names corresponding to numerical features.
-    - categorical_features (list): List of column names corresponding to categorical features.
-
-    Returns:
-    - preprocessed_data (array): Preprocessed data as a NumPy array.
-    """
+  
     try:
         numeric_transformer = Pipeline(steps=[
             ('imputer', SimpleImputer(strategy='median')),

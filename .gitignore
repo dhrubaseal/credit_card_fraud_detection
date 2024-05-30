@@ -60,7 +60,7 @@ target/
 .env
 
 # Virtual Environment
-.venv
+.ccfd_ml
 
 # Database
 *.db
